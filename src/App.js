@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import FocusApp from './FocusApp'
+import CopyApp from "./CopyApp"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Use Ref</h1>
+      <p>useRef tiene dos usos, el primeros es la interaccion con el DOM y el segundo es ser una referencia mutable,una varaible que mantendra su estado entre renderisaciones pero que cuando se modifique su valor, no va a generar un render.</p>
+      <hr/>
+      <FocusApp/>
+      <br/>
+      <br/>
+      <hr/>
+      <CopyApp/>
+      
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
